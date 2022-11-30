@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resset.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Juego mayor/menor</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="main__title">Juego <span class="span">Mayor/Menor</span></h1>
+
+        <div class="contenido">
+            <div class="text">
+                <p>¿Acaso tu perspicacia y suerte en el azar sera suficiente para este desafio?</p>
+                <div class="main_botones">
+                    <button class="btn reglas--btn">Reglas</button>
+                    <button class="btn juego--btn">Juego</button>
+                </div>
+            </div>
+
+            <div class="reglas" hidden>
+                <h2>Reglas</h2>
+                <ul class="list">
+                    <li><p>El juego se jugara con una baraja francesa (52 cartas sin comodines)</p></li>
+                    <li><p>El jugador debera elegir si la carta siguiente sera mayor o menor a la mostrada en mesa</p></li>
+                    <li><p>En caso de acertar sumara 1 punto, en caso contrario se le restara 1 punto tambien</p></li>
+                    <li><p>El az tendra el valor de 1, la J de 11 la Q de 12 y la K de 13</p></li>
+                </ul>
+
+                <div class="main_botones">
+                    <button class="btn inicio--btn">Inicio</button>
+                    <button class="btn juego--btn">Juego</button>
+                </div>
+            </div>
+               
+            <div class="game" hidden>
+                <div class="nuevoJuego">
+                    
+                </div>
+                <p class="puntuacion">0</p>
+                <div class="mayor-menor">
+                    <button class="btn mayor--btn">Mayor</button>
+                    <button class="btn menor--btn">Menor</button>
+                </div>
+                <p class="maximoPuntaje">Maximo Puntaje: 0</p>
+                <div class="main_botones">
+                    <button class="btn reglas--btn">Reglas</button>
+                    <button class="btn newJuego--btn">Nuevo Juego</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
